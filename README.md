@@ -66,4 +66,4 @@ El endpoint que importa es `/start`, que devuelve una Estructura JSON asi:
 }
 ```
 
-Esta estructura se procesa en`[index.js](/blob/master/public/js/index.js)
+Esta estructura se procesa en [index.js](https://github.com/pawunlu/ajax-based-site/blob/master/public/js/index.js)
