@@ -14,7 +14,7 @@ class HomeController
 
     public function start()
     {
-        //header('Content-Type: application/json');
+        header('Content-Type: application/json');
         $contenido_inicio = [
             "nav" => [
                 "item 1",

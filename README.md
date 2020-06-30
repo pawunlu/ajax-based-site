@@ -34,11 +34,36 @@ composer requiere name/lib:version
 Ejecutar:
 
 ```
-git clone https://github.com/tomasdelvechio/The-PHP-Practitioner-Full-Source-Code.git paw-mvc/
-cd paw-mvc/
+git clone https://github.com/pawunlu/ajax-based-site.git paw-example-ajax/
+cd paw-example-ajax/
 # Aca irian los pasos de instalación
 php -S localhost:8888
 ```
 
 Luego ingresar a http://localhost:8888
 
+## Estructura de Datos
+
+El endpoint que importa es `/start`, que devuelve una Estructura JSON asi:
+```json
+{
+  "nav": [
+    "item 1",
+    "item 2",
+    "item 3"
+  ],
+  "main": {
+    "section_uno": {
+      "article_uno": "articulo uno",
+      "article_dos": "articulo dos"
+    },
+    "section_dos": "Seccion uno"
+  },
+  "footer": [
+    "link 1",
+    "link 2"
+  ]
+}
+```
+
+Esta estructura se procesa en`[index.js](/blob/master/public/js/index.js)
