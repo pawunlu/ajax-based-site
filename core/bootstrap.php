@@ -17,14 +17,6 @@ App::bind('config', require 'config.php');
 App::bind('logger', Logger::getLogger(App::get('config')['logger']['level']));
 
 /**
- * Load database connection
- */
-App::bind('database', new QueryBuilder(
-    Connection::make(App::get('config')['database']),
-    App::get('logger')
-));
-
-/**
  * Load template engine
  */
 $loader = new Twig_Loader_Filesystem(App::get('config')['twig']['templates_dir']);
